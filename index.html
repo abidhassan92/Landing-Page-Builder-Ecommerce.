@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%2300F6FF" stroke-width="5"/><ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="%237B2CBF" stroke-width="5" transform="rotate(45 50 50)"/><ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="%237B2CBF" stroke-width="5" transform="rotate(-45 50 50)"/><circle cx="50" cy="50" r="5" fill="%2300F6FF"/></svg>' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Landing Page Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#00F6FF',
+              'secondary': '#7B2CBF',
+              'dark-bg': '#0D1117',
+              'dark-card': '#161B22',
+              'dark-border': '#30363D',
+              // Excel Minox Template Colors
+              'excel-dark': '#000000',
+              'excel-card': '#1a1a1a',
+              'excel-gold': '#b18e5a',
+              'excel-tan': '#c8a97e',
+              // Aura Glow Template Colors
+              'aura-bg': '#F8F9FA',
+              'aura-text': '#212529',
+              'aura-text-light': '#495057',
+              'aura-accent': '#D4AFB9',
+              'aura-card': '#FFFFFF',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-in-up': 'slideInUp 0.5s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-gray-200">
+    <div id="root"></div>
+  </body>
+</html>
